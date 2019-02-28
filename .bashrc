@@ -8,6 +8,10 @@ function quickpush(){
 	git commit -m 'quickpush'
 	git push
 }
+function pushdotfiles(){
+	cd ~/.dotfiles
+	quickpush
+}
 
 PS1="\n${debian_chroot:+($debian_chroot)}\u@\h\n🍆 "
 
