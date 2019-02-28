@@ -12,7 +12,7 @@ function pushdotfiles(){
 	cwd=$(pwd)
 	cd ~/.dotfiles
 	quickpush
-	cd cwd
+	cd $cwd
 
 }
 
