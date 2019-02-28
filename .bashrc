@@ -9,10 +9,10 @@ function quickpush(){
 	git push
 }
 function pushdotfiles(){
-	CURPATH=$(pwd)
+	cwd=$(pwd)
 	cd ~/.dotfiles
 	quickpush
-	cd CURPATH
+	cd cwd
 
 }
 
