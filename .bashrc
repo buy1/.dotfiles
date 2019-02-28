@@ -1,4 +1,8 @@
 alias home="cd ~/"
 
-1=${PS1%?}
-PS1=${PS1%?}\n'$ '
+function quickpush(){
+	git add -A
+	git commit -m 'quickpush'
+	git push
+}
+
