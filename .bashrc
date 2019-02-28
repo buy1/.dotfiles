@@ -9,8 +9,11 @@ function quickpush(){
 	git push
 }
 function pushdotfiles(){
+	CURPATH=$(pwd)
 	cd ~/.dotfiles
 	quickpush
+	cd CURPATH
+
 }
 
 PS1="\n${debian_chroot:+($debian_chroot)}\u@\h\n🍆 "
