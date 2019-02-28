@@ -19,6 +19,7 @@ if (has("termguicolors"))
 	 set termguicolors
 endif
 colorscheme onedark
+set hlsearch
 
 ""set cursorline
 ""hi CursorLine gui=underline cterm=underline
