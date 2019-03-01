@@ -49,6 +49,9 @@ nnoremap <tab> za
 vnoremap <tab> :sort<cr>
 setlocal foldmethod=syntax
 set nofoldenable
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>
 map <space> <leader>
 
 set laststatus=2
