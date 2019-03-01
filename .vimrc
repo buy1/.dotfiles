@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
-"Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
@@ -42,9 +42,14 @@ nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 nnoremap tn  :tabnew<CR>
+" TAB in normal mode: quick fold toggling
+nnoremap <tab> za
+"
+" " TAB in visual mode: sort
+vnoremap <tab> :sort<cr>
 setlocal foldmethod=syntax
 set nofoldenable
-map <space> :
+map <space> <leader>
 
 set laststatus=2
 set noshowmode
