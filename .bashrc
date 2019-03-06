@@ -24,7 +24,7 @@ function vimrc(){
 
 function bashrc(){
 	bcwd=$(pwd)
-	vim ~/.vimrc
+	vim ~/.bashrc
 	cd $cwd
 }
 #alias vimrc="vim ~/.vimrc"
