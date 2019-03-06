@@ -9,6 +9,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 Plug 'https://github.com/tpope/vim-repeat.git'
 Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'https://github.com/tpope/vim-unimpaired.git'
 Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'flazz/vim-colorschemes'
 call plug#end()
