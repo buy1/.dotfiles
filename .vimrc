@@ -12,6 +12,7 @@ Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/tpope/vim-unimpaired.git'
 Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'flazz/vim-colorschemes'
+Plug 'https://github.com/mbbill/undotree.git'
 call plug#end()
 "" Color Themes
 
@@ -43,8 +44,16 @@ nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 nnoremap tn  :tabnew<CR>
+nnoremap<leader-u> :UndotreeToggle<cr>
 " TAB in normal mode: quick fold toggling
 nnoremap <tab> za
+
+" Allows remembering of folds
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
 "
 " " TAB in visual mode: sort
 vnoremap <tab> :sort<cr>
