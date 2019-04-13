@@ -1,6 +1,7 @@
 alias home="cd ~/"
 alias refresh="source ~/.bashrc"
 alias stree="find ./ -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias compile="g++ -Wall -g -O -Wshadow"
 
 function quickpush(){
 	git add -A
