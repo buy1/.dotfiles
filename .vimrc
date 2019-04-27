@@ -18,7 +18,7 @@ call plug#end()
 
 syntax enable
 if (has("termguicolors"))
-	 set termguicolors
+    set termguicolors
 endif
 colorscheme onedark
 set hlsearch
@@ -26,9 +26,14 @@ set hlsearch
 ""set cursorline
 ""hi CursorLine gui=underline cterm=underline
 set number
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set tabstop=4
-set softtabstop=0 noexpandtab
-set shiftwidth=4
+"set softtabstop=0
+set expandtab 
+set shiftwidth=4 
+"set smarttab
 ""set colorcolumn=72
 ""set cursorcolumn               
 filetype plugin on
@@ -69,6 +74,7 @@ set noshowmode
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set colorcolumn=72
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
