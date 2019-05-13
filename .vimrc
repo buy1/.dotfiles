@@ -24,10 +24,11 @@ colorscheme onedark
 set hlsearch
 
 ""set cursorline
-""hi CursorLine gui=underline cterm=underline
+"""hi CursorLine gui=underline cterm=underline
+" Enable CursorLine
+highlight Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
 set number
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set tabstop=4
 "set softtabstop=0
