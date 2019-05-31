@@ -30,6 +30,6 @@ function bashrc(){
 }
 #alias vimrc="vim ~/.vimrc"
 #alias bashrc="vim ~/.bashrc"
-PS1="\n${debian_chroot:+($debian_chroot)}\u@\h\n🍆 "
+PS1="\n${debian_chroot:+($debian_chroot)}\u@\h\n~"
 
 
